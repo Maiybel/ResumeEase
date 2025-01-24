@@ -13,7 +13,7 @@ const PersonalDetails = ({ data, errors, onUpdate }) => {
           <input
             value={data.fullName}
             onChange={(e) => onUpdate("fullName", e.target.value)}
-            placeholder="Enter your full name"
+            placeholder="Full name"
             className="w-full p-2 border rounded-lg"
           />
           {errors.fullName && (
@@ -29,7 +29,7 @@ const PersonalDetails = ({ data, errors, onUpdate }) => {
             type="email"
             value={data.email}
             onChange={(e) => onUpdate("email", e.target.value)}
-            placeholder="Enter your email"
+            placeholder="email"
             className="w-full p-2 border rounded-lg"
           />
           {errors.email && (
@@ -45,7 +45,7 @@ const PersonalDetails = ({ data, errors, onUpdate }) => {
             type="tel"
             value={data.phone}
             onChange={(e) => onUpdate("phone", e.target.value)}
-            placeholder="Enter your phone number"
+            placeholder="phone number"
             className="w-full p-2 border rounded-lg"
           />
         </div>
